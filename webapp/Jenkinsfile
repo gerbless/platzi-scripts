@@ -24,7 +24,7 @@ pipeline {
         sh "docker run ${dockerImage.id} npm test"
       }
     }
-    stage('Publish') {
+    stage('Publish subir img') {
       when {
         branch 'master'
       }
